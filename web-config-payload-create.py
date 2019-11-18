@@ -78,6 +78,7 @@ Response.write(o)
 def file_writer(payload):
 	with open("web.config", "w") as f:
 		f.write(payload)
+   print "File created !"
 
 
 def help_menu():
