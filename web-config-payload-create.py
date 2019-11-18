@@ -76,10 +76,13 @@ Response.write(o)
 
 
 def file_writer(payload):
-	with open("web.config", "w") as f:
-		f.write(payload)
-   print "File created !"
+   try:
+      with open("web.config", "w") as f:
+         f.write(payload)
 
+      print "File Created : web.config"
+   except:
+      print "Someting went wrong !"
 
 def help_menu():
    print "--test-exec      : Testing with simple math calculation if there is a code execution"
