@@ -79,6 +79,11 @@ unbind C-n
 bind-key n new-session
 bind-key C-n new-session
 
+# Ctrl + e + @ : Move pane to window
+unbind @
+unbind C-@
+bind-key @ command-prompt -p "create pane from:"  "join-pane -t ':%%'"
+
 # Ctrl + a + Pagedown : Next window
 #unbind Pagedown
 unbind Pagedown
@@ -119,3 +124,4 @@ new-session -n $HOST
 # Copy from tmux to system clipboard
 # Needs xclip -> sudo apt install xclip
 # bind -t vi-copy y copy-pipe "xclip -sel clip -i"
+
