@@ -46,8 +46,8 @@ setw -g mode-keys vi
 
 
 # Using the mouse to switch panes
-set -g mouse-utf8 on
-set -g mouse on
+#set -g mouse-utf8 on
+#set -g mouse on
 
 # Ctrl - t or t new window
 unbind t
